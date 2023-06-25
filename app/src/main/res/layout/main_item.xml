@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:elevation="6dp"
+    android:background="@drawable/bb"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/Companytext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:text="Boutique : "
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/Addresstext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Companytext"
+            android:layout_alignStart="@+id/Companytext"
+            android:layout_alignEnd="@+id/Companytext"
+            android:layout_marginTop="10dp"
+            android:text="Adresse : "
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/ProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Addresstext"
+            android:layout_alignStart="@+id/Addresstext"
+            android:layout_alignEnd="@+id/Addresstext"
+            android:layout_marginTop="10dp"
+            android:text="Aliments : "
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/ProductQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProductName"
+            android:layout_alignStart="@+id/ProductName"
+            android:layout_alignEnd="@+id/ProductName"
+            android:layout_marginTop="10dp"
+            android:text="Quantite : "
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <LinearLayout
+            android:layout_below="@+id/ProductQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <Button
+                android:id="@+id/btnItineraire"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:text="ITINÉRAIRE"
+                android:textAllCaps="false"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:id="@+id/btnReceptionner"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:text="RECEPTIONNER"
+                android:textAllCaps="false"
+                android:layout_marginLeft="5dp"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
+
