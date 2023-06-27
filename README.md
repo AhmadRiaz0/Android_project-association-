@@ -3,6 +3,7 @@ Study project for engineering degree
 
 Android application : 
   Android studio 
+  Java
   Firebase 
   Google Map 
 
